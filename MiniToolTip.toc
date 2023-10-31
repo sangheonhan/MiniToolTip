@@ -1,0 +1,7 @@
+## Interface: 30400
+## Title: Mini Item Level
+## Notes: Addon for item level tooltip WotLK Classic
+## SavedVariables: MTTDB
+
+MiniToolTip.lua
+MTTOptionsFrame.lua
