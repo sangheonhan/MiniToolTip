@@ -21,12 +21,12 @@ function MTT:SetToolTipText(tooltip, itemLevel, itemClassID, rowIndex, isShoppin
     -- There's a weird interaction with new lines for the shopping tooltips, the text gets spaces inserted on render; can't remove
     -- So instead if is shopping tt, then move then combine the existing line with the next one
     if isShoppingTooltip then
-    	left:SetText("|cffffd100Item Level: " .. itemLevel .. "|r")
+    	left:SetText("|cffffd100아이템 레벨: " .. itemLevel .. "|r")
 
 		local nextLeft = _G[tooltip:GetName() .. 'TextLeft' .. rowIndex+1]
 		nextLeft:SetText(leftText .. "|n" .. nextLeft:GetText())
   	else
-  		left:SetText("|cffffd100Item Level: " .. itemLevel .. "|r|n" .. leftText)
+  		left:SetText("|cffffd100아이템 레벨: " .. itemLevel .. "|r|n" .. leftText)
     end		
 
 		tooltip:Show()
