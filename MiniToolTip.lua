@@ -24,7 +24,9 @@ function MTT:SetToolTipText(tooltip, itemLevel, itemClassID, rowIndex, isShoppin
     	left:SetText("|cffffd100아이템 레벨: " .. itemLevel .. "|r")
 
 		local nextLeft = _G[tooltip:GetName() .. 'TextLeft' .. rowIndex+1]
-		nextLeft:SetText(leftText .. "|n" .. nextLeft:GetText())
+		if nextLeft:GetText() then
+			nextLeft:SetText(leftText .. "|n" .. nextLeft:GetText())
+		end
   	else
   		left:SetText("|cffffd100아이템 레벨: " .. itemLevel .. "|r|n" .. leftText)
     end		
