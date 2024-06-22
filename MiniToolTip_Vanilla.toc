@@ -1,6 +1,6 @@
-## Interface: 11500
+## Interface: 11502
 ## Title: Mini Item Level
-## Notes: Addon for item level tooltip WotLK Classic
+## Notes: Addon for item level tooltip Classic Era
 ## SavedVariables: MTTDB
 
 MiniToolTip.lua
